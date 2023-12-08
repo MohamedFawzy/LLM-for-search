@@ -105,3 +105,12 @@ def umap_plot_old(sentences, emb):
         height=400
     )
     return chart
+
+def print_result(result):
+    """ Print results with colorful formatting """
+    for i,item in enumerate(result):
+        print(f'item {i}')
+        for key in item.keys():
+            print(f"{key}:{item.get(key)}")
+            print()
+        print()
